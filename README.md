@@ -8,3 +8,8 @@ Note: CONTENT OF BOT CONTAINS SPOILERS FOR NieR:Automata!!!
 
 # Also see: Unit 2B written with Python
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Thassanai546&repo=2B-Discord-Bot&theme=ayu-mirage)](https://github.com/Thassanai546/2B-Discord-Bot)
+
+# Preview
+![image](https://user-images.githubusercontent.com/72495327/125179030-5895c180-e1e2-11eb-9ad5-766f36c196e9.png)
+<br>
+Stats taken from <a href="https://nier.fandom.com/wiki/YoRHa_Type_A_No.2">The Wiki</a>

@@ -7,4 +7,4 @@ Link to the game on <a href="https://store.steampowered.com/agecheck/app/524220/
 Note: CONTENT OF BOT CONTAINS SPOILERS FOR NieR:Automata!!!
 
 # Also see: Unit 2B written with Python
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Thassanai546&repo=2B-Discord-Bot)](https://github.com/Thassanai546/2B-Discord-Bot)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Thassanai546&repo=2B-Discord-Bot&theme=ayu-mirage)](https://github.com/Thassanai546/2B-Discord-Bot)

@@ -12,4 +12,6 @@ Note: CONTENT OF BOT CONTAINS SPOILERS FOR NieR:Automata!!!
 # Preview
 ![image](https://user-images.githubusercontent.com/72495327/125179030-5895c180-e1e2-11eb-9ad5-766f36c196e9.png)
 <br>
-Stats taken from <a href="https://nier.fandom.com/wiki/YoRHa_Type_A_No.2">The Wiki</a>
+*Stats taken from <a href="https://nier.fandom.com/wiki/YoRHa_Type_A_No.2">The Wiki</a>*
+<br><br>
+![greeting](https://user-images.githubusercontent.com/72495327/125291584-7a459480-e319-11eb-8431-dd1874e1199b.PNG)

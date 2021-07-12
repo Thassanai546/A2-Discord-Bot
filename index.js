@@ -8,6 +8,9 @@ const db = new Database()
 
 const greetings = ["hey a2","hi a2","yo a2","hello a2","greetings a2","hiya a2","..yo a2","evening a2","morning a2","howdy a2"]
 
+const help_list = ["$about","$personality","$berserk","$gif","$avatar","$responding","$help","$berserk","$dash"]
+help_list.sort()
+
 getRandom = (directory) => { 
   // Get a random file from a directory
   let files = fs.readdirSync(directory)
@@ -43,6 +46,10 @@ client.on("message", msg => {
     }
   })
 
+  if (msg.content === "$help") {
+    msg.author.send(help_list)
+  }
+
   if (msg.content === "$about name") {
     msg.channel.send(`*A2's name is a reference to the apocryphal last words of Julius Caesar, "et tu, Brute?" ("and you, Brutus?") spoken to his traitorous friend Brutus as the latter stabbed him. This line was made famous by Shakespeare's play Julius Caesar, though it did not originate with it. This is a twofold reference, both to her status as an alleged traitor and her own betrayal by YoRHa.*`)
   }
@@ -62,7 +69,15 @@ client.on("message", msg => {
   }
 
   if (msg.content.startsWith("$personality")) {
-    msg.channel.send("A2 is initially depicted as mysterious and taciturn. However, it is eventually shown through her interactions with Pod 042 that she possesses an aggressive and fiery personality. She has a propensity towards reckless behavior as she will dive head-long into dangerous situations without consideration for strategic evaluations or her own personal safety. When speaking to others, she tends to be blunt, impatient and foul-mouthed.")
+    msg.channel.send("*A2 is initially depicted as mysterious and taciturn. However, it is eventually shown through her interactions with Pod 042 that she possesses an aggressive and fiery personality. She has a propensity towards reckless behavior as she will dive head-long into dangerous situations without consideration for strategic evaluations or her own personal safety. When speaking to others, she tends to be blunt, impatient and foul-mouthed.*")
+  }
+
+  if (msg.content.startsWith("$berserk")) {
+    msg.channel.send(`Rather than self-destructing, A2 has the ability to enter a "Berserk Mode," increasing damage both dealt and received and rapidly depleting her health until it hits 1 HP, whereupon Berserk Mode will end. \n "Alert: The use of B-Mode to increase nuclear fusion output carries unacceptable levels of risk. Any offensive boost is offset by lowered defense and increased maintenance costs." - Pod 042`, {files: ['./assets/gifs/bmode/berserkerFight.gif']})
+  }
+
+  if (msg.content.startsWith("$dash")) {
+    msg.channel.send(`Exclusive to A2, holding down evade will result in a dash where A2 starts to glow red. If she is in Berserk Mode (see with $berserk) this dash will deal damage to enemies: even in normal mode it seems an attack immediately after the dash concludes deals slightly more damage.`, {files: ['./assets/gifs/bmode/a2Dash.gif']})
   }
 
   if (msg.content === "$gif") {

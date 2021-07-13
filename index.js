@@ -80,6 +80,10 @@ client.on("message", msg => {
     msg.channel.send(`Exclusive to A2, holding down evade will result in a dash where A2 starts to glow red. If she is in Berserk Mode (see with $berserk) this dash will deal damage to enemies: even in normal mode it seems an attack immediately after the dash concludes deals slightly more damage.`, {files: ['./assets/gifs/bmode/a2Dash.gif']})
   }
 
+  if (msg.content.startsWith("$strategy")) {
+    msg.channel.send("A2 has a very aggressive move set, and as such, has the highest damage potential out of all the playable characters in the game, especially with the right Plug-in Chips. When using Berserk with higher level Offensive Heal, Deadly Heal, or Damage Absorb Chips, the health drain will be offset by the massive amounts of health gained while dealing damage and killing enemies.")
+  }
+
   if (msg.content === "$gif") {
     msg.channel.send(getRandom('./assets/gifs/random/'))
   }

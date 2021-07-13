@@ -61,7 +61,7 @@ client.on("message", msg => {
     .setImage("https://github.com/Thassanai546/A2-Discord-Bot/blob/master/assets/gifs/about/53-corruption_(57).jpg?raw=true")
     .setURL("https://nier.fandom.com/wiki/YoRHa_Type_A_No.2")
     .addFields(
-		  { name:'Occupation', value: 'YoRHa (Formerly)', inline: true },
+		  { name: 'Occupation', value: 'YoRHa (Formerly)', inline: true },
       { name: 'Height', value: '168cm (including heels)', inline: true},
       { name: 'Weight', value: '139.2kg', inline: true },
     )
@@ -98,13 +98,17 @@ client.on("message", msg => {
 
   // Allow users to toggle responding true/false
   if (msg.content.startsWith("$responding")) {
-    value = msg.content.split("$responding ")[1]
-    if (value.toLowerCase() == "true") {
-      db.set("responding", true)
-      msg.channel.send("Responding is on")
-    }else{
-      msg.channel.send("Responding is off")
-      db.set("responding", false)
+    value = msg.content.split("$responding ")[1] // 'true' or 'false'?
+    try {
+      if(value.toLowerCase() == "true") {
+        msg.channel.send("Unit A2 responding...")
+        db.set("responding", true)
+      } else {
+        msg.channel.send("Responding is now off...")
+        db.set("responding", false)
+      }
+    } catch(err) {
+      msg.channel.send("I can set my $responding to be 'true' or 'false'.")
     }
   }
 

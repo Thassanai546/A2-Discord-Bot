@@ -35,9 +35,8 @@ client.on("message", msg => {
 
   db.get("responding").then(responding => {
     if(responding == true) {
-      // When responding is enabled
-
-      if (greetings.includes(msg.content)) {
+      // When responding is enabled unit A2 will respond to greetings
+      if (greetings.includes(msg.content.toLowerCase())) {
         let greeting = greetings[Math.floor(Math.random() * greetings.length)]
         greeting = greeting.split(' ')[0]
         msg.channel.send(greeting + ' ' + msg.author.username)
@@ -73,7 +72,7 @@ client.on("message", msg => {
   }
 
   if (msg.content.startsWith("$berserk")) {
-    msg.channel.send(`Rather than self-destructing, A2 has the ability to enter a "Berserk Mode," increasing damage both dealt and received and rapidly depleting her health until it hits 1 HP, whereupon Berserk Mode will end. \n "Alert: The use of B-Mode to increase nuclear fusion output carries unacceptable levels of risk. Any offensive boost is offset by lowered defense and increased maintenance costs." - Pod 042`, {files: ['./assets/gifs/bmode/berserkerFight.gif']})
+    msg.channel.send(`Rather than self-destructing, A2 has the ability to enter a "Berserk Mode," increasing damage both dealt and received and rapidly depleting her health until it hits 1 HP, whereupon Berserk Mode will end. \n *"Alert: The use of B-Mode to increase nuclear fusion output carries unacceptable levels of risk. Any offensive boost is offset by lowered defense and increased maintenance costs."* - Pod 042`, {files: ['./assets/gifs/bmode/berserkerFight.gif']})
   }
 
   if (msg.content.startsWith("$dash")) {
@@ -82,6 +81,11 @@ client.on("message", msg => {
 
   if (msg.content.startsWith("$strategy")) {
     msg.channel.send("A2 has a very aggressive move set, and as such, has the highest damage potential out of all the playable characters in the game, especially with the right Plug-in Chips. When using Berserk with higher level Offensive Heal, Deadly Heal, or Damage Absorb Chips, the health drain will be offset by the massive amounts of health gained while dealing damage and killing enemies.")
+    msg.channel.send("https://github.com/Thassanai546/A2-Discord-Bot/blob/master/assets/gifs/about/aboutA2.gif?raw=true")
+  }
+
+  if (msg.content.startsWith("$devs")) {
+    msg.channel.send("Developers: PlatinumGames\nPublishers: Square Enix\nDirector: Yoko Taro")
   }
 
   if (msg.content === "$gif") {

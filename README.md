@@ -16,3 +16,11 @@ Note: CONTENT OF BOT CONTAINS SPOILERS FOR NieR:Automata!!!
 *Stats taken from <a href="https://nier.fandom.com/wiki/YoRHa_Type_A_No.2">The Wiki</a>*
 <br><br>
 ![greeting](https://user-images.githubusercontent.com/72495327/125291584-7a459480-e319-11eb-8431-dd1874e1199b.PNG)
+<br>
+![a2-strategy](https://user-images.githubusercontent.com/72495327/133859773-231bee3a-fbe2-47b9-b838-c5c463bdc4c7.PNG)
+<br>
+![a2-card](https://user-images.githubusercontent.com/72495327/133859782-1c0bbcc0-8921-42e9-81af-2610409a3d98.PNG)
+<br>
+![as-image-command](https://user-images.githubusercontent.com/72495327/133859814-7458a9d4-e68a-4256-9483-47d99e0c1665.PNG)
+<br>
+![a2-berserk](https://user-images.githubusercontent.com/72495327/133859821-ad24a72f-90b9-40ec-b6d8-7c9ce1ba5f2b.PNG)

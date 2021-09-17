@@ -8,7 +8,7 @@ const db = new Database()
 
 const greetings = ["hey a2","hi a2","yo a2","hello a2","greetings a2","hiya a2","..yo a2","evening a2","morning a2","howdy a2"]
 
-const help_list = ["$about","$personality","$berserk","$gif","$avatar","$responding true/false","$help","$berserk","$dash","$strategy"]
+const help_list = ["$about","$personality","$gif","$avatar","$responding true/false","$help","$berserk","$dash","$strategy"]
 help_list.sort()
 
 getRandom = (directory) => { 
